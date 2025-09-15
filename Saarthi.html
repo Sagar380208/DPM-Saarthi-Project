@@ -1,0 +1,260 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IIMX Workspace – Wireframe Match</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- LEFT SIDEBAR -->
+    <aside class="left">
+      <section class="card profile">
+        <div class="avatar">👤</div>
+        <div class="meta">
+          <h2>Sagar Sharma</h2>
+          <p><b>Course</b> - MBA (Marketing)</p>
+          <p><b>Term</b> - III</p>
+          <p><b>Section</b> - D</p>
+          <p><b>Unique Id</b> - 2024****</p>
+        </div>
+      </section>
+
+      <section class="card subjects">
+        <h3>Subject</h3>
+        <button class="pill active">Marketing Management</button>
+        <button class="pill">Consumer Behaviour</button>
+        <button class="pill">Strategic Management</button>
+        <button class="pill">Business Statistics</button>
+        <button class="pill">DPM</button>
+      </section>
+
+      <nav class="card nav">
+        <button><span>+</span>Attendance</button>
+        <button><span>+</span>Time Table</button>
+        <button><span>+</span>Calendar</button>
+        <button><span>+</span>Syllabus</button>
+        <button><span>+</span>Fees Detail</button>
+        <button><span>+</span>Notes</button>
+        <button><span>+</span>Drive connect</button>
+      </nav>
+    </aside>
+
+    <!-- CENTER -->
+    <main class="center">
+      <!-- Tabs row -->
+      <header class="tabs-row">
+        <div class="tabs">
+          <button class="tab active" data-tab="1">Tab 1</button>
+          <button class="tab" data-tab="2">Tab 2</button>
+          <button class="tab" data-tab="3">Tab 3</button>
+          <button class="tab" data-tab="4">Tab 4</button>
+        </div>
+        <button class="tab plus" aria-label="Add tab">+</button>
+      </header>
+
+      <!-- Status & Upcoming section (exact split like wireframe) -->
+      <section class="status-upcoming card">
+        <div class="status-dots">
+          <i></i><i></i><i></i>
+        </div>
+
+        <div class="up-block">
+          <div class="title">Upcoming<br>Assignment</div>
+          <div class="icon-row">
+            <button class="circle" aria-label="assignment a">
+              <svg viewBox="0 0 24 24"><rect x="6" y="5" width="12" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 3h6v4H9z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle" aria-label="assignment b">
+              <svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8h8M8 12h8M8 16h8" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle" aria-label="assignment c">
+              <svg viewBox="0 0 24 24"><path d="M7 4h10l2 3v13H5V7z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="v-divider"></div>
+
+        <div class="up-block">
+          <div class="title">Upcoming<br>Workshop</div>
+          <div class="icon-row wide">
+            <!-- 6 icons to match wireframe -->
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 18l4-4 4 4M12 14v4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h9" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><path d="M7 4h10l2 3v13H5V7z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 11h6" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M6 10h12M8 14h8" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+            <button class="circle">
+              <svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 6v-2" stroke="currentColor" stroke-width="1.6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CANVAS AREA -->
+      <section class="canvas card">
+        <!-- Wireframe hint arrows -->
+        <div class="hint left">«««</div>
+        <div class="hint right">»»»</div>
+
+        <!-- Tab 1 -->
+        <div class="page show" data-tab="1">
+          <div class="ghost-title">New page</div>
+          <div class="whiteboard"></div>
+
+          <div class="get-started">
+            <span>Get started with</span>
+            <div class="gs">
+              <button>🤖&nbsp;Ask AI</button>
+              <button>💬&nbsp;Meet</button>
+              <button>🗃️&nbsp;Database</button>
+              <button>📝&nbsp;Form</button>
+              <button>🧩&nbsp;Templates</button>
+              <button class="more">…</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2 -->
+        <div class="page" data-tab="2">
+          <article class="block mono">
+            <div class="block-hint">«««</div>
+            <h4>Template 1: Strategy-on-a-Page Canvas</h4>
+<pre>
+Mission: [What we exist to do]
+Vision:  [Where we're headed]
+Values:  [How we operate]
+
+Strategic Pillars:
+| Customer Excellence | Operational Excellence | Innovation Leadership |
+
+Key Initiatives:
+- [ ] Customer Experience Program
+- [ ] Digital Transformation
+- [ ] Sustainability Integration
+
+Success Metrics:
+| NPS Score | Market Share | Revenue Growth | Brand Equity |
+</pre>
+          </article>
+
+          <article class="block mono">
+            <div class="block-hint">»»»</div>
+            <h4>Dashboard Mock-up</h4>
+<pre>
+┌───────────────────────────────────────────────┐
+│ MARKETING MANAGEMENT DASHBOARD — Q3 2025     │
+├───────────────────────────────────────────────┤
+│ Customer Health         │ Financial Performance
+│ NPS: 67 ↑               │ Marketing ROI: 4.2x ↑
+│ CLV: ₹24,600 ↑          │ CAC: ₹2,100 ↓
+│ Churn: 5.2% ↓           │ Revenue Growth: 18% ↑
+├───────────────────────────────────────────────┤
+│ Brand Strength          │ Channel Performance
+│ Awareness: 78% ↑        │ Digital: 42% share ↑
+│ Consideration: 34% ↑    │ Retail: 38% share ▲
+│ Preference: 18% ↑       │ Direct: 20% share ↑
+└───────────────────────────────────────────────┘
+</pre>
+          </article>
+        </div>
+
+        <!-- Tab 3 -->
+        <div class="page" data-tab="3">
+          <div class="framework">
+            <h3>Strategic Framework</h3>
+            <div class="keys">
+              <div class="key left">
+                <svg viewBox="0 0 140 120" aria-hidden="true">
+                  <g fill="none" stroke="currentColor" stroke-width="3">
+                    <circle cx="52" cy="44" r="16"/>
+                    <path d="M64 58l30 15-5 10 10 5-5 10 10 5-6 12"/>
+                  </g>
+                </svg>
+                <h5 class="teal">Customer<br>Excellence</h5>
+                <p>Focus on delivering exceptional customer experiences and satisfaction.</p>
+              </div>
+              <div class="key center">
+                <svg viewBox="0 0 120 180" aria-hidden="true">
+                  <g fill="none" stroke="currentColor" stroke-width="3">
+                    <circle cx="60" cy="62" r="22"/>
+                    <path d="M60 84v56"/>
+                    <rect x="48" y="140" width="24" height="30" rx="2"/>
+                  </g>
+                </svg>
+                <h5 class="green">Operational<br>Excellence</h5>
+                <p>Streamlining processes and enhancing efficiency in operations.</p>
+              </div>
+              <div class="key right">
+                <svg viewBox="0 0 150 120" aria-hidden="true">
+                  <g fill="none" stroke="currentColor" stroke-width="3">
+                    <circle cx="95" cy="42" r="18"/>
+                    <path d="M79 54L40 70l8 10-10 6 8 10-10 6 8 12"/>
+                  </g>
+                </svg>
+                <h5 class="yellow">Innovation<br>Leadership</h5>
+                <p>Driving innovation and staying ahead in the market.</p>
+              </div>
+            </div>
+
+            <div class="mini-tag">
+              <div class="bars"></div>
+              <span>Strategic<br>Framework</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4 -->
+        <div class="page" data-tab="4">
+          <div class="empty">
+            <p>Start something new here…</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- RIGHT RAIL -->
+    <aside class="right">
+      <div class="tools card">
+        <!-- vertical like wireframe -->
+        <button class="badge">Ai</button>
+        <button class="tool">📤</button>
+        <button class="tool">🔁</button>
+        <button class="tool">🖼️</button>
+        <button class="tool">🎞️</button>
+        <div class="rule"></div>
+        <button class="tool">{ }</button>
+        <button class="tool">📎</button>
+        <button class="tool">🧑‍🏫</button>
+      </div>
+
+      <section class="card community">
+        <h4>Community Connect</h4>
+        <div class="peers">
+          <div class="peer"><div class="ava">👤</div><div class="pid">F 1</div></div>
+          <div class="peer"><div class="ava">👤</div><div class="pid">F 2</div></div>
+          <div class="peer"><div class="ava">👤</div><div class="pid">F 3</div></div>
+        </div>
+        <button class="forum">Marketing Forum</button>
+        <button class="forum">DPM Forum</button>
+      </section>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast">Coming soon</div>
+  <script src="script.js"></script>
+</body>
+</html>

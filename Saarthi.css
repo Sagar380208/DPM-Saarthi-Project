@@ -1,0 +1,189 @@
+/* styles.css */
+/* ---------- Base ---------- */
+:root{
+  --bg:#ececec;
+  --panel:#ffffff;
+  --ink:#1c1f24;
+  --muted:#6b7280;
+  --line:#e7e7ee;
+  --chip:#efeff3;
+  --shadow:0 10px 28px rgba(0,0,0,.08);
+  --teal:#0ea5a4;
+  --green:#28b463;
+  --yellow:#e0b000;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font:14px/1.35 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+  color:var(--ink);
+  background:var(--bg);
+}
+/* ---------- Layout ---------- */
+.app{
+  height:100%;
+  display:grid;
+  grid-template-columns: 270px minmax(760px,1fr) 300px;
+  gap:16px;
+  padding:14px;
+}
+.card{
+  background:var(--panel);
+  border-radius:16px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.left,.center,.right{display:flex;flex-direction:column;gap:14px}
+
+/* ---------- Left ---------- */
+.profile{display:flex;gap:12px;padding:12px}
+.avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#ececf2}
+.meta h2{margin:6px 0 8px;font-size:16px}
+.meta p{margin:2px 0;color:#40444b}
+.meta p b{color:#333}
+
+.subjects{padding:12px}
+.subjects h3{margin:4px 2px 10px;font-size:14px}
+.pill{
+  width:100%;
+  border:0;
+  padding:10px 12px;
+  background:#dbdbe1;
+  color:#2f3238;
+  border-radius:10px;
+  margin:6px 0;
+  text-align:left;
+  cursor:pointer;
+}
+.pill.active{background:#b7b7be;color:#111;font-weight:700}
+
+.nav{padding:10px}
+.nav button{
+  width:100%;
+  display:flex;align-items:center;gap:8px;
+  border:1px solid var(--line);
+  background:#f6f6fb;
+  border-radius:12px;
+  padding:10px 12px;
+  margin:6px 0;
+  cursor:pointer;
+}
+.nav button span{font-weight:800;color:#65676e}
+
+/* ---------- Center Top ---------- */
+.tabs-row{
+  display:flex;align-items:center;justify-content:space-between
+}
+.tabs{display:flex;gap:10px}
+.tab{
+  border:0;background:#f0f0f5;border-radius:18px;padding:10px 18px;font-weight:700;cursor:pointer;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.05);
+}
+.tab:hover{background:#e8e8ef}
+.tab.active{background:#fff;box-shadow:var(--shadow)}
+.tab.plus{width:40px;height:40px;border-radius:50%;display:grid;place-items:center}
+
+.status-upcoming{display:grid;grid-template-columns:auto 1fr 1px 1fr;align-items:center;padding:10px 12px}
+.status-dots{display:flex;gap:10px;align-items:center;padding:0 8px}
+.status-dots i{width:18px;height:18px;border-radius:50%;background:#dcdce1;display:block}
+.up-block{display:flex;gap:16px;align-items:center}
+.up-block .title{min-width:120px;font-size:12px;line-height:1.1;color:#3e4048}
+.icon-row{display:flex;gap:10px}
+.icon-row.wide{gap:8px}
+.circle{
+  width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);
+  background:#fbfbfe;color:#2b2f36;cursor:pointer;transition:.15s;
+}
+.circle svg{width:22px;height:22px}
+.circle:hover{transform:translateY(-1px);box-shadow:0 6px 14px rgba(0,0,0,.08)}
+.v-divider{height:44px;background:var(--line)}
+
+/* ---------- Canvas ---------- */
+.canvas{position:relative;padding:18px}
+.hint{
+  position:absolute;top:8px;font-size:26px;font-weight:900;color:#1d2430;opacity:.18;pointer-events:none
+}
+.hint.left{left:8px}
+.hint.right{right:8px}
+
+.page{display:none}
+.page.show{display:block}
+.ghost-title{
+  font-size:36px;font-weight:900;color:#c7c7cd;letter-spacing:.2px;margin:8px 2px 16px
+}
+.whiteboard{
+  height:360px;border:2px dashed var(--line);border-radius:12px;background:#fff;
+}
+
+/* Get started row */
+.get-started{
+  display:flex;align-items:center;justify-content:space-between;margin-top:14px;color:#666
+}
+.gs{display:flex;gap:8px;flex-wrap:wrap}
+.gs button{
+  border:1px solid var(--line);background:#f7f7fb;border-radius:12px;padding:8px 12px;cursor:pointer
+}
+.gs .more{width:36px;display:grid;place-items:center;font-weight:700}
+
+/* Tab 2 blocks */
+.block{padding:14px;margin-bottom:12px;position:relative}
+.block-hint{
+  position:absolute;top:-14px;right:10px;color:#1d2430;opacity:.22;font-weight:900
+}
+.mono pre{
+  margin:8px 0 0;white-space:pre-wrap;font:13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;color:#2a3136
+}
+
+/* Tab 3 framework */
+.framework{display:flex;flex-direction:column;align-items:center}
+.framework h3{margin:6px 0 8px}
+.keys{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px;align-items:start;margin-top:6px
+}
+.key{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:280px}
+.key svg{width:140px;height:auto;color:#9aa2a9}
+.key p{margin:6px 0 0;color:#666;max-width:220px}
+.key h5{margin:6px 0 0;font-size:14px}
+.teal{color:var(--teal)} .green{color:var(--green)} .yellow{color:var(--yellow)}
+.mini-tag{display:flex;align-items:center;gap:8px;margin-top:10px;color:#777}
+.mini-tag .bars{width:28px;height:22px;border:2px solid #c7ccd3;border-radius:4px;position:relative}
+.mini-tag .bars::before,.mini-tag .bars::after{content:"";position:absolute;left:4px;right:4px;height:3px;background:#c7ccd3;border-radius:2px}
+.mini-tag .bars::before{top:5px}.mini-tag .bars::after{bottom:5px}
+
+/* Tab 4 empty */
+.empty{height:420px;display:grid;place-items:center;color:#8a9099}
+
+/* ---------- Right Rail ---------- */
+.tools{display:flex;flex-direction:column;align-items:center;padding:12px;gap:10px}
+.badge{width:52px;height:52px;border-radius:50%;border:0;background:#111;color:#fff;font-weight:800;letter-spacing:.5px;cursor:pointer}
+.tool{width:46px;height:46px;border-radius:14px;border:1px solid var(--line);background:#fafbff;cursor:pointer}
+.rule{width:32px;height:0;border-top:1px dashed var(--line);margin:6px 0}
+.community{padding:12px}
+.community h4{margin:4px 0 10px}
+.peers{display:flex;gap:14px;margin-bottom:8px}
+.peer{text-align:center}
+.ava{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#efeff4;margin:auto}
+.pid{font-size:12px;color:#666;margin-top:4px}
+.forum{width:100%;border:1px solid var(--line);background:#f7f7fb;border-radius:10px;padding:10px;margin-top:8px;cursor:pointer}
+
+/* ---------- Toast ---------- */
+.toast{
+  position:fixed;left:50%;bottom:22px;transform:translateX(-50%) scale(.98);
+  background:#111;color:#fff;padding:10px 14px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s
+}
+.toast.show{opacity:1;transform:translateX(-50%) scale(1)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .app{grid-template-columns:240px 1fr 280px}
+}
+@media (max-width:1024px){
+  .app{grid-template-columns:220px 1fr}
+  .right{display:none}
+}
+@media (max-width:720px){
+  .app{grid-template-columns:1fr}
+  .left{order:2}
+  .center{order:1}
+}
